@@ -1,0 +1,20 @@
+[package]
+name = "docver-gui"
+version = "0.1.0"
+edition = "2021"
+description = "Local version control for Office documents, with a diff view"
+
+[dependencies]
+eframe = { version = "0.35", default-features = false, features = ["glow", "x11", "default_fonts", "accesskit"] }
+egui = "0.35"
+quick-xml = "0.41"
+zip = { version = "9", default-features = false, features = ["deflate-flate2-zlib-rs"] }
+anyhow = "1"
+git2 = { version = "0.21", default-features = false }
+
+[profile.release]
+opt-level = 3
+lto = "fat"
+codegen-units = 1
+panic = "abort"
+strip = "symbols"

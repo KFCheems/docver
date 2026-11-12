@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Name=docver
+Name[zh_CN]=docver 文档版本
+GenericName=Document version control
+GenericName[zh_CN]=文档版本与差异
+Comment=Local version control and redline diff for Word documents
+Comment[zh_CN]=本地 Word 文档版本管理与逐词对照
+Exec=docver-gui %f
+Icon=docver
+Terminal=false
+Categories=Office;Utility;
+MimeType=application/vnd.openxmlformats-officedocument.wordprocessingml.document;
+StartupWMClass=docver
