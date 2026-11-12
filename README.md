@@ -16,6 +16,12 @@ Two front ends over one engine:
 | `bin/`, `lib/`, `tests/` | the CLI |
 | `gui/` | the desktop app (own `README.md`, own `install.sh`) |
 
+![docver-gui, side by side](docs/screenshot.png)
+
+<sub>Left rail is the document's git history; the page is the previous snapshot
+against the working copy. Green marks an insertion, red a deletion, and each
+changed paragraph carries a rule in the gutter.</sub>
+
 ## Why not Word's "track changes"
 
 Track changes is for one document travelling between people. It does not help
